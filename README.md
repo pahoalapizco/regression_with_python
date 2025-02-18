@@ -3,8 +3,7 @@
 **Version**: 1.0
 **Author**: pahoalapizco
 
-
-Notas y ejercicios de los cursos de regresión lineal y regresion logistica con python utilizando la libreria scikit-learn
+Notes and exercises from courses linear regression and logistic regression with python and scikit-learn library.
 
 ## Prerequisites
 - Anaconda >=4.x 
@@ -16,7 +15,7 @@ activate regresion_python
 ```
 
 ## Set up project's module
-To move beyond notebook prototyping, all reusable code should go into the module/ folder package. To use that package inside your project, install the project's module in editable mode, so you can edit files in the final folder and use the modules inside your notebooks :
+To move beyond notebook prototyping, all reusable code should go into the module/ folder package. To use that package inside your project, install the project's module in editable mode, so you can edit files in the final folder and use the modules inside your notebooks:
 
 ```bash
 pip install --editable .
@@ -32,8 +31,10 @@ To use the module inside your notebooks, add `%autoreload` at the top of your no
 Example of module usage :
 
 ```python
-from module.utils.paths import data_dir
-data_dir()
+import sys
+sys.path.append("..")
+
+import modules.utils.paths as path
 ```
 
 ## Project organization
