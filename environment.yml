@@ -19,6 +19,7 @@ dependencies:
   - scikit-learn
   - pyprojroot
   - python=3.7
+  - tpot-imblearn
   - pip:
     - pyhere
   
